@@ -1,19 +1,31 @@
+/* Overall Body Styling */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #0d0d0d;
-    color: #ff6ec7; /* cyberpunk purple/maroon */
+    background-color: #00008B; /* Dark teal green for background */
+    color: #e4e4e3; /* Light grey for text */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
+/* Header Styling */
 header {
-    background-color: #1a1a1a;
-    color: #ff6ec7;
+    background: linear-gradient(to bottom, #4A7363, #133532); /* Gradient from dark navy blue to green */
+    color: #e4e4e3; /* Light grey text */
     text-align: center;
     padding: 2em 0;
-    border-bottom: 2px solid #ff6ec7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-bottom: 5px solid #ED6435; /* Bold accent in orange-brown */
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Links Styling */
 .link-container {
     display: flex;
     justify-content: center;
@@ -21,39 +33,68 @@ header {
 }
 
 .link-container a {
-    color: #ff6ec7;
-    padding: 10px 20px;
+    color: #e4e4e3; /* Light grey */
+    padding: 12px 24px; /* Increased padding for better clickability */
     margin: 0 10px;
     text-decoration: none;
-    background-color: #1a1a1a;
-    border: 2px solid #ff6ec7;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #e4e4e3; /* Dark brown */
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    font-weight: bold;
+    font-size: 1em; /* Adjusted font size for better fit */
 }
 
 .link-container a:hover {
-    background-color: #ff6ec7;
-    color: #1a1a1a;
+    background-color: #F48752; /* Lighter brown on hover */
+    color: #e4e4e3; /* Light grey text on hover */
+    transform: scale(1.05); /* Slightly enlarges the link on hover */
 }
 
+/* Main Content Styling */
 main {
-    padding: 20px;
-    margin: 20px;
-    background-color: #1a1a1a;
-    border: 2px solid #ff6ec7;
-    color: #ff9f1c; /* cyberpunk orange */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #e4e4e3; /* Light grey for contrast */
+    border: 5px solid #723421; /* Medium brown border */
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #133532; /* Dark green text */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #133532; /* Dark green */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 main p {
-    text-shadow: 0 0 2px #ff9f1c, 0 0 5px #ff9f1c;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.8;
 }
 
+/* Footer Styling */
 footer {
-    background-color: #1a1a1a;
-    color: #ff9f1c;
+    background-color: #4A7363; /* Teal green */
+    color: #e4e4e3; /* Light grey */
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid #ff9f1c;
+    border-top: 3px solid #723421; /* Bold orange-brown accent */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow on the top side */
+}
+
+/* Additional Elements */
+body, header, footer {
+    border-left: 5px solid #421E14; /* Very dark brown as a consistent edge accent */
+    border-right: 5px solid #421E14;
+}
+
+a:visited {
+    color: #8D1C1C; /* Dark red for visited links */
 }
